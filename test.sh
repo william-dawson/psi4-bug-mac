@@ -1,4 +1,4 @@
-conda create --name p4
-conda activate p4
 conda install -c psi4 psi4 -y
+which psi4
+psi4 test.dat
 python test.py
