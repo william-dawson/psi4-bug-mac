@@ -5,11 +5,11 @@ jobs:
     strategy:
       matrix:
         name: ["linux", "mac"]
-      include:
-        - name: "linux"
-          os: ubuntu-latest
-        - name: "mac"
-          os: macos-latest
+        include:
+          - name: "linux"
+            os: ubuntu-latest
+          - name: "mac"
+            os: macos-latest
   runs-on: ${{ matrix.os }}
   steps:
      - uses: actions/checkout@v1
