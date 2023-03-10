@@ -1,0 +1,11 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+  runs-on: macos-latest
+  steps:
+     - name: Checkout
+       uses: actions/checkout@v1
+     - name: test
+       run: bash test.sh
+       uses: conda-incubator/setup-miniconda@v2
