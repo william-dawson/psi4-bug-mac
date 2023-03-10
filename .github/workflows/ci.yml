@@ -10,9 +10,9 @@ jobs:
             os: ubuntu-latest
           - name: "mac"
             os: macos-latest
-  runs-on: ${{ matrix.os }}
-  steps:
-     - uses: actions/checkout@v1
-     - uses: conda-incubator/setup-miniconda@v2
-     - name: test
-       run: bash test.sh
+    runs-on: ${{ matrix.os }}
+    steps:
+       - uses: actions/checkout@v1
+       - uses: conda-incubator/setup-miniconda@v2
+       - name: test
+         run: bash test.sh
